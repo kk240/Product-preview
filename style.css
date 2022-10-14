@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-color: var(--Cream);
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+p{
+    font-size: 14px;
+}
+
+.container {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    margin: 20px;
+    overflow: hidden;
+}
+.product-image {
+    width: 100%;
+    height: 200px;
+    background: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-image img{
+    width: 100%;
+    height: 200px;
+}
+.text{
+    padding:  20px;
+}
+#logo{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--Dark_grayish_blue);
+}
+.text h1{
+    font-family: 'Fraunces', serif;
+    margin: 1rem 0;
+
+}
+.text p{
+    color: var(--Dark_grayish_blue);
+}
+.price-tag{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.price-tag p:nth-child(1){
+    font-family:'Fraunces', serif ;
+    font-size: 2rem;
+    color: var(--dark-cyan);
+}
+
+.price-tag p:nth-child(2){
+    margin-left: 10px;
+    text-decoration:line-through;
+    color: var(--Dark_grayish_blue);
+}
+ button{
+    width: 90%;
+    padding: 10px;
+    color: var(--White);
+    background-color: var(--dark-cyan);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+button img {
+    margin-right: 10px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+  
+.container {
+    flex-direction: row;
+    align-self: center;
+    height: 500px;
+    margin-top: 70px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-image img{
+    width: 100%;
+}
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+   
+.container {
+   max-width: 800px;
+    margin: 20px auto;
+    margin-top: 70px;
+}
+.product-image {
+   
+}
+
+.text{
+    height: 100%;
+}
+
+.text p{
+   line-height: 1.2rem;
+   margin:40px 0;
+}
+}
