@@ -91,9 +91,18 @@ p{
     border: none;
     border-radius: 8px;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 button img {
     margin-right: 10px;
+}
+
+button:hover {
+    background-color:hsl(157, 36%, 31%);
+    cursor: pointer;
 }
 
 /* small tablet styles */
@@ -127,9 +136,7 @@ button img {
     margin: 20px auto;
     margin-top: 70px;
 }
-.product-image {
-   
-}
+
 
 .text{
     height: 100%;
